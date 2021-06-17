@@ -1,5 +1,5 @@
 {% set name = "pynguin" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynguin-{{ version }}.tar.gz
-  sha256: 59057ebb64450dd01dbfacd6e3c3504a60a682873191d292e082bab0eb97b0b0
+  sha256: c703c02e48c59f94b38f45fb1b4ed557516bb2f6dcc1fba719fc24a046cca0df
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - pytest >=6.2,<7.0
     - python >=3.6,<4.0
     - rich >=10.1,<11.0
-    - simple-parsing ==0.0.13
+    - simple-parsing <0.0.16,>=0.0.15
     - typing_inspect >=0,<1
 
 test:
