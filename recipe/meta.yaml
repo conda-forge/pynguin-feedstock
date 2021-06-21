@@ -37,10 +37,9 @@ requirements:
 test:
   imports:
     - pynguin
-    - pynguin.analyses
   commands:
     - pip check
-    - pynguin --help
+    - pynguin
   requires:
     - pip
 
