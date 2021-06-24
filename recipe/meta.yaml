@@ -35,10 +35,9 @@ requirements:
     - typing_inspect >=0,<1
 
 test:
-  imports:
-    - pynguin
   commands:
     - pip check
+    - PYNGUIN_DANGER_AWARE=1 python -c 'import pynguin'
     - pynguin
   requires:
     - pip
