@@ -37,7 +37,8 @@ requirements:
 test:
   commands:
     - pip check
-    - PYNGUIN_DANGER_AWARE=1 python -c 'import pynguin'
+    - export PYNGUIN_DANGER_AWARE=1 
+    - python -c 'import pynguin'
     - pynguin
   requires:
     - pip
