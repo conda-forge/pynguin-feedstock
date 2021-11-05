@@ -34,7 +34,7 @@ requirements:
     - pytest >=6.2,<7.0
     - python >=3.6,<4.0
     - rich >=10.12,<11.0
-    - simple-parsing <0.0.17,>=0.0.16
+    - simple-parsing <0.0.18,>=0.0.17
     - typing_inspect >=0,<1
 
 test:
