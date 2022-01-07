@@ -1,7 +1,6 @@
 {% set name = "pynguin" %}
 {% set version = "0.15.0" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -21,20 +20,21 @@ requirements:
   host:
     - pip
     - poetry
-    - python >=3.6,<4.0
+    - python >=3.6
   run:
     - astor >=0.8.1,<0.9.0
     - bytecode >=0,<1
     - jellyfish >=0,<1
     - jinja2 >=3.0
+    - mutpy-pynguin >=0.7.1
     - networkx >=2,<3.0
-    - ordered-set >=4.0.2
+    - ordered-set >=4.0
     - pydot >=1.4,<2.0
-    - pygments >=2.10.0
+    - pygments >=2.10
     - pytest >=6.2,<7.0
-    - python >=3.6,<4.0
+    - python >=3.6
     - rich >=10.12,<11.0
-    - simple-parsing <0.0.17,>=0.0.16
+    - simple-parsing >=0.0.17,<0.0.18
     - typing_inspect >=0,<1
 
 test:
