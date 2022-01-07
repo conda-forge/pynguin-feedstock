@@ -1,7 +1,6 @@
 {% set name = "pynguin" %}
 {% set version = "0.13.2" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -27,6 +26,7 @@ requirements:
     - bytecode >=0,<1
     - jellyfish >=0,<1
     - jinja2 >=3.0
+    - mutpy-pynguin >=0.7.1
     - networkx >=2,<3.0
     - ordered-set >=4.0.2
     - pydot >=1.4,<2.0
@@ -34,7 +34,7 @@ requirements:
     - pytest >=6.2,<7.0
     - python >=3.6,<4.0
     - rich >=10.12,<11.0
-    - simple-parsing <0.0.17,>=0.0.16
+    - simple-parsing <0.0.18,>=0.0.17
     - typing_inspect >=0,<1
 
 test:
