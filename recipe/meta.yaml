@@ -27,6 +27,7 @@ requirements:
     - bytecode >=0,<1
     - jellyfish >=0,<1
     - jinja2 >=3.0
+    - mutpy-pynguin >=0.7.1
     - networkx >=2,<3.0
     - ordered-set >=4.0.2
     - pydot >=1.4,<2.0
