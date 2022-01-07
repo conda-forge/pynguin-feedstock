@@ -1,5 +1,5 @@
 {% set name = "pynguin" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynguin-{{ version }}.tar.gz
-  sha256: cda92fe5aeea8e49f2eaf9cf9b856025a9826f746088586cb5988a19b2ae40d1
+  sha256: 9d254e8e17d96435a566accceea2a04c3618ac651166c9f0d3a62ec103990a01
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
   host:
     - pip
     - poetry
-    - python >=3.6,<4.0
+    - python >=3.6
   run:
     - astor >=0.8.1,<0.9.0
     - bytecode >=0,<1
@@ -32,9 +32,9 @@ requirements:
     - pydot >=1.4,<2.0
     - pygments >=2.10
     - pytest >=6.2,<7.0
-    - python >=3.6,<4.0
+    - python >=3.6
     - rich >=10.12,<11.0
-    - simple-parsing <0.0.18,>=0.0.17
+    - simple-parsing >=0.0.17,<0.0.18
     - typing_inspect >=0,<1
 
 test:
