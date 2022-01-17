@@ -42,6 +42,10 @@ test:
     - pip check
     - export PYNGUIN_DANGER_AWARE=1
     - python -c 'import pynguin'
+    - python -c 'import pynguin.controlflow'
+    - python -c 'import pynguin.module'
+    - python -c 'import pynguin.seeding'
+    - python -c 'import pynguin.seeding.testimport'
     - pynguin
   requires:
     - pip
