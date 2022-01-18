@@ -47,8 +47,8 @@ test:
     - python -c 'import pynguin.analyses.module'
     - python -c 'import pynguin.analyses.seeding'
     - python -c 'import pynguin.analyses.seeding.testimport'
-    - python -c 'import pynguin.assertions'
-    - python -c 'import pynguin.assertions.mutation_analysis'
+    - python -c 'import pynguin.assertion'
+    - python -c 'import pynguin.assertion.mutation_analysis'
     - python -c 'import pynguin.coverage"
     - python -c 'import pynguin.ga"
     - python -c 'import pynguin.ga.comparitors"
