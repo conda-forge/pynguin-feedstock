@@ -49,25 +49,25 @@ test:
     - python -c 'import pynguin.analyses.seeding.testimport'
     - python -c 'import pynguin.assertion'
     - python -c 'import pynguin.assertion.mutation_analysis'
-    - python -c 'import pynguin.coverage"
-    - python -c 'import pynguin.ga"
-    - python -c 'import pynguin.ga.comparitors"
-    - python -c 'import pynguin.ga.operators"
-    - python -c 'import pynguin.ga.operators.crossover"
-    - python -c 'import pynguin.ga.operators.ranking"
-    - python -c 'import pynguin.ga.operators.selection"
-    - python -c 'import pynguin.generation"
-    - python -c 'import pynguin.generation.algorithms"
-    - python -c 'import pynguin.generation.export"
-    - python -c 'import pynguin.generation.stoppingconditions"
-    - python -c 'import pynguin.instrumentation"
-    - python -c 'import pynguin.resources"
-    - python -c 'import pynguin.setup"
-    - python -c 'import pynguin.testcase"
-    - python -c 'import pynguin.typeinference"
-    - python -c 'import pynguin.utils"
-    - python -c 'import pynguin.utils.generic"
-    - python -c 'import pynguin.utils.statistics"
+    - python -c 'import pynguin.coverage'
+    - python -c 'import pynguin.ga'
+    - python -c 'import pynguin.ga.comparitors'
+    - python -c 'import pynguin.ga.operators'
+    - python -c 'import pynguin.ga.operators.crossover'
+    - python -c 'import pynguin.ga.operators.ranking'
+    - python -c 'import pynguin.ga.operators.selection'
+    - python -c 'import pynguin.generation'
+    - python -c 'import pynguin.generation.algorithms'
+    - python -c 'import pynguin.generation.export'
+    - python -c 'import pynguin.generation.stoppingconditions'
+    - python -c 'import pynguin.instrumentation'
+    - python -c 'import pynguin.resources'
+    - python -c 'import pynguin.setup'
+    - python -c 'import pynguin.testcase'
+    - python -c 'import pynguin.typeinference'
+    - python -c 'import pynguin.utils'
+    - python -c 'import pynguin.utils.generic'
+    - python -c 'import pynguin.utils.statistics'
     - pynguin
   requires:
     - pip
