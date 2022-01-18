@@ -51,7 +51,7 @@ test:
     - python -c 'import pynguin.assertion.mutation_analysis'
     - python -c 'import pynguin.coverage'
     - python -c 'import pynguin.ga'
-    - python -c 'import pynguin.ga.comparitors'
+    - python -c 'import pynguin.ga.comparators'
     - python -c 'import pynguin.ga.operators'
     - python -c 'import pynguin.ga.operators.crossover'
     - python -c 'import pynguin.ga.operators.ranking'
