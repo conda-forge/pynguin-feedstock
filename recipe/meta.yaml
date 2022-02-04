@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - poetry
+    - poetry-core
     - python >=3.6
   run:
     - astor >=0.8.1,<0.9.0
