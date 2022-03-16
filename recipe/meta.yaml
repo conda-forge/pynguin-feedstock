@@ -1,5 +1,5 @@
 {% set name = "pynguin" %}
-{% set version = "0.17.0" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynguin-{{ version }}.tar.gz
-  sha256: bd3dffe0fd33400614c0cc3d2290d41f5a0fe670a619d3cc81e7767dc53a9fa5
+  sha256: 1721c23d0a3876af6038d1a0aefcce6a652073de32d4db3c6321e6e652dd28f7
 
 build:
   number: 0
@@ -25,16 +25,16 @@ requirements:
     - astor >=0.8.1,<0.9.0
     - bytecode >=0,<1
     - jellyfish >=0,<1
-    - jinja2 >=3.0
-    - mutpy-pynguin >=0.7.1
+    - jinja2 >=3.0,<4.0
+    - mutpy-pynguin >=0.7.1,<0.8.0
     - networkx >=2,<3.0
-    - ordered-set >=4.0
+    - ordered-set >=4.1,<5.0
     - pydot >=1.4,<2.0
     - pygments >=2.11,<3.0
-    - pytest >=6.2,<7.0
+    - pytest >=7.1,<8.0
     - python >=3.6
-    - rich >=11.0,<12.0
-    - simple-parsing >=0.0.17,<0.0.18
+    - rich >=12.0,<13.0
+    - simple-parsing >=0.0.18,<0.0.19
     - typing_inspect >=0,<1
 
 test:
@@ -43,10 +43,7 @@ test:
     - export PYNGUIN_DANGER_AWARE=1
     - python -c 'import pynguin'
     - python -c 'import pynguin.analyses'
-    - python -c 'import pynguin.analyses.controlflow'
     - python -c 'import pynguin.analyses.module'
-    - python -c 'import pynguin.analyses.seeding'
-    - python -c 'import pynguin.analyses.seeding.testimport'
     - python -c 'import pynguin.assertion'
     - python -c 'import pynguin.assertion.mutation_analysis'
     - python -c 'import pynguin.coverage'
