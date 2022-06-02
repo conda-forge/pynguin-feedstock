@@ -20,20 +20,20 @@ requirements:
   host:
     - pip
     - poetry-core
-    - python >=3.6
+    - python >=3.10,<3.11
   run:
     - bytecode >=0,<1
     - jellyfish >=0,<1
-    - jinja2 >=3.0,<4.0
+    - jinja2 >=3.1
     - mutpy-pynguin >=0.7.1,<0.8.0
-    - networkx >=2,<3.0
+    - networkx >=2.8
     - ordered-set >=4.1,<5.0
     - pydot >=1.4,<2.0
-    - pygments >=2.11,<3.0
+    - pygments >=2.12
     - pytest >=7.1,<8.0
-    - python >=3.6
-    - rich >=12.0,<13.0
-    - simple-parsing >=0.0.18,<0.0.19
+    - python >=3.10,<3.11
+    - rich >=12.4
+    - simple-parsing >=0.0.19
     - typing_inspect >=0,<1
 
 test:
