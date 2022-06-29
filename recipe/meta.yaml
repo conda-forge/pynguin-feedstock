@@ -22,6 +22,7 @@ requirements:
     - poetry-core
     - python >=3.10,<3.11
   run:
+    - black >=22.6.0
     - bytecode >=0,<1
     - jellyfish >=0,<1
     - jinja2 >=3.1
