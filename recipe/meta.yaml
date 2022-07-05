@@ -1,5 +1,5 @@
 {% set name = "pynguin" %}
-{% set version = "0.24.1" %}
+{% set version = "0.25.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynguin-{{ version }}.tar.gz
-  sha256: 02f5c947ec30dc302daf9b46e320866f940a1a193fc3df5fa12a4a1e55cfa42e
+  sha256: 63b3ae88eea6d7a76b79a7161fa85e7fda50d3d160912df26b66acf5ed75ecc2
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
     - poetry-core
     - python >=3.10,<3.11
   run:
+    - astroid >=2.11.6
     - black >=22.6.0
     - bytecode >=0,<1
     - jellyfish >=0,<1
