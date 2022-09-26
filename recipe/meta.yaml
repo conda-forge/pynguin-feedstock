@@ -22,20 +22,20 @@ requirements:
     - poetry-core
     - python >=3.10,<3.11
   run:
-    - astroid >=2.11.6
-    - black >=22.6.0
+    - asciitree >=0.3.3,<0.4.0
+    - astroid >=2.12.10,<3.0.0
+    - black >=22.8.0,<23.0.0
     - bytecode >=0,<1
     - jellyfish >=0,<1
-    - jinja2 >=3.1
+    - jinja2 >=3.1,<4.0
     - mutpy-pynguin >=0.7.1,<0.8.0
-    - networkx ==2.8.2
-    - ordered-set >=4.1,<5.0
+    - networkx >=2.8.6,<3.0.0
     - pydot >=1.4,<2.0
-    - pygments >=2.12
+    - pygments >=2.13,<3.0
     - pytest >=7.1,<8.0
     - python >=3.10,<3.11
-    - rich >=12.4
-    - simple-parsing >=0.0.20
+    - rich >=12.5,<13.0
+    - simple-parsing >=0.0.20,<0.0.21
     - typing_inspect >=0,<1
 
 test:
@@ -43,25 +43,6 @@ test:
     - pip check
     - export PYNGUIN_DANGER_AWARE=1
     - python -c 'import pynguin'
-    - python -c 'import pynguin.analyses'
-    - python -c 'import pynguin.assertion'
-    - python -c 'import pynguin.assertion.mutation_analysis'
-    - python -c 'import pynguin.coverage'
-    - python -c 'import pynguin.ga'
-    - python -c 'import pynguin.ga.comparators'
-    - python -c 'import pynguin.ga.operators'
-    - python -c 'import pynguin.ga.operators.crossover'
-    - python -c 'import pynguin.ga.operators.ranking'
-    - python -c 'import pynguin.ga.operators.selection'
-    - python -c 'import pynguin.generation'
-    - python -c 'import pynguin.generation.algorithms'
-    - python -c 'import pynguin.generation.stoppingconditions'
-    - python -c 'import pynguin.instrumentation'
-    - python -c 'import pynguin.resources'
-    - python -c 'import pynguin.testcase'
-    - python -c 'import pynguin.utils'
-    - python -c 'import pynguin.utils.generic'
-    - python -c 'import pynguin.utils.statistics'
     - pynguin
   requires:
     - pip
