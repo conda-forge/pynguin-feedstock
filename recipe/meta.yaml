@@ -30,7 +30,7 @@ requirements:
     - jinja2 >=3.1.2,<4.0.0
     - libcst >=0.4.9,<0.5.0
     - mutpy-pynguin >=0.7.1,<0.8.0
-    - networkx>=3.0,<4.0
+    - networkx >=3.0,<4.0
     - pydot >=1.4.2,<2.0.0
     - pygments >=2.14.0,<3.0.0
     - pytest >=7.2.0,<8.0.0
