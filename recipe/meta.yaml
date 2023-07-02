@@ -1,5 +1,5 @@
 {% set name = "pynguin" %}
-{% set version = "0.32.0" %}
+{% set version = "0.33.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynguin-{{ version }}.tar.gz
-  sha256: b49865f5becf205cd886935c7245d64adf8e825bb135e62a9dc0d0070a13aadd
+  sha256: b8eefa067a93003d157b97da177979351a43bcd2bffbde9efd7eb1e0fb2c9572
 
 build:
   number: 0
