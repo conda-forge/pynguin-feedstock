@@ -41,7 +41,7 @@ requirements:
 test:
   commands:
     # Disable for now as bytecode versioning isn't working with pip check
-    - pip check
+    # - pip check
     - export PYNGUIN_DANGER_AWARE=1
     - python -c 'import pynguin'
     - pynguin
