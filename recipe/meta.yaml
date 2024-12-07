@@ -23,19 +23,20 @@ requirements:
     - python >=3.10,<3.11
   run:
     - python >=3.10,<3.11
-    - astroid >=3.2.2,<4.0.0
-    - black >=24.4.2,<25.0.0
-    - bytecode >=0.15.1,<0.16.0
-    - jellyfish >=1.0.4,<2.0.0
-    - mutpy-pynguin >=0.7.1,<0.8.0
-    - networkx >=3.3,<4.0
-    - rich >=13.7.1,<14.0.0
+    - astroid >=3.3.5,<4.0.0
+    - black >=24.10.0,<25.0.0
+    - bytecode >=0.16.0,<0.17.0
+    - jellyfish >=1.1.0,<2.0.0
+    - networkx >=3.4.0,<4.0.0
+    - rich >=13.9.4,<14.0.0
     - pygments >=2.18.0,<3.0.0
-    - pytest >=8.2.2,<9.0.0
-    - simple-parsing >=0.1.5,<0.2.0
+    - pytest >=8.3.3,<9.0.0
+    - simple-parsing >=0.1.6,<0.2.0
     - typing_inspect >=0.9.0,<0.10.0
     - asciitree >=0.3.3,<0.4.0
-    - libcst >=1.4.0,<2.0.0
+    - libcst >=1.5.1,<2.0.0
+    - typing_extensions
+    - jinja2 >=3.1.4,<4.0.0
 
 test:
   commands:
