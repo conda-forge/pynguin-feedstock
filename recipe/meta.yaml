@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "pynguin" %}
 {% set version = "0.40.0" %}
 
@@ -10,7 +11,7 @@ source:
   sha256: c8cd23cf9aa545f0dd782f264859ec62b3b4598125de2a2ef0e13e836865560d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - pynguin = pynguin.cli:main
@@ -20,9 +21,9 @@ requirements:
   host:
     - pip
     - poetry-core
-    - python >=3.10,<3.11
+    - python {{ python_min }}
   run:
-    - python >=3.10,<3.11
+    - python >={{ python_min }},<3.11
     - astroid >=3.3.5,<4.0.0
     - black >=24.10.0,<25.0.0
     - bytecode >=0.16.0,<0.17.0
@@ -47,6 +48,7 @@ test:
     - pynguin
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/se2p/pynguin
