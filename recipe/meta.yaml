@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "pynguin" %}
-{% set version = "0.40.0" %}
+{% set version = "0.41.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pynguin-{{ version }}.tar.gz
-  sha256: c8cd23cf9aa545f0dd782f264859ec62b3b4598125de2a2ef0e13e836865560d
+  sha256: dd1222f9631d79fbe6c9360a92cdec60aa479501adc8a112c776e980142e2e4b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - pynguin = pynguin.cli:main
