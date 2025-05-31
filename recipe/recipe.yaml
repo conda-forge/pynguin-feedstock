@@ -1,29 +1,33 @@
-{% set python_min = "3.10" %}
-{% set name = "pynguin" %}
-{% set version = "0.41.0" %}
+schema_version: 1
+
+context:
+  python_min: 3.10
+  name: pynguin
+  version: 0.41.0
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pynguin-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pynguin-${{ version }}.tar.gz
   sha256: dd1222f9631d79fbe6c9360a92cdec60aa479501adc8a112c776e980142e2e4b
 
 build:
   number: 0
   noarch: python
-  entry_points:
-    - pynguin = pynguin.cli:main
-  script: {{ PYTHON }} -m pip install . -vv
+  script: ${{ PYTHON }} -m pip install . -vv
+  python:
+    entry_points:
+      - pynguin = pynguin.cli:main
 
 requirements:
   host:
     - pip
     - poetry-core
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
   run:
-    - python >={{ python_min }},<3.11
+    - python >=${{ python_min }},<3.11
     - astroid >=3.3.9,<4.0.0
     - black >=25.1.0,<26.0.0
     - bytecode >=0.16.1,<0.17.0
@@ -43,29 +47,30 @@ requirements:
     - psutil >=7.0.0,<8.0.0
     # Not listed but needed for import test
     - numpy
-    
-test:
-  commands:
-    # Disable for now as bytecode versioning isn't working with pip check
-    # - pip check
-    - export PYNGUIN_DANGER_AWARE=1
-    - python -c 'import pynguin'
-    - pynguin
-  requires:
-    - pip
-    - python {{ python_min }}
+
+tests:
+  # Import test in script, no pip check because doesn't work with bytecode
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+    script:
+      - export PYNGUIN_DANGER_AWARE=1
+      - "python -c 'import pynguin'"
+      - pynguin
 
 about:
-  home: https://github.com/se2p/pynguin
-  doc_url: https://pynguin.readthedocs.io/en/latest/
   summary: Pynguin is a tool for automated unit test generation for Python
   license: LGPL-3.0-only
   license_file: LICENSE.rst
   description: |
     Unit test automated generation techniques have been proposed and mature
-     tools exist for statically typed languages, such as Java. Pynguin is on of
-     the first tool that fills this gap and allows the automated generation of
-     unit tests for Python programs.
+    tools exist for statically typed languages, such as Java. Pynguin is on of
+    the first tool that fills this gap and allows the automated generation of
+    unit tests for Python programs.
+
+
+  homepage: https://github.com/se2p/pynguin
+  documentation: https://pynguin.readthedocs.io/en/latest/
 
 extra:
   recipe-maintainers:
