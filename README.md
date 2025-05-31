@@ -12,10 +12,9 @@ Summary: Pynguin is a tool for automated unit test generation for Python
 Documentation: https://pynguin.readthedocs.io/en/latest/
 
 Unit test automated generation techniques have been proposed and mature
- tools exist for statically typed languages, such as Java. Pynguin is on of
- the first tool that fills this gap and allows the automated generation of
- unit tests for Python programs.
-
+tools exist for statically typed languages, such as Java. Pynguin is on of
+the first tool that fills this gap and allows the automated generation of
+unit tests for Python programs.
 
 Current build status
 ====================
