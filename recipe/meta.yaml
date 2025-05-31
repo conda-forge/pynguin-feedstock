@@ -41,6 +41,8 @@ requirements:
     - setuptools >=78.1,<79.0
     - toml >=0.10.2,<0.11.0
     - psutil >=7.0.0,<8.0.0
+    # Not listed but needed for import test
+    - numpy
     
 test:
   commands:
