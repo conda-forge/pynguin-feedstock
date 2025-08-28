@@ -1,9 +1,9 @@
 schema_version: 1
 
 context:
-  python_min: 3.10
+  python_min: '3.10'
   name: pynguin
-  version: 0.41.0
+  version: "0.42.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pynguin-${{ version }}.tar.gz
-  sha256: dd1222f9631d79fbe6c9360a92cdec60aa479501adc8a112c776e980142e2e4b
+  sha256: e65ebae39cf3164636264ff3da2dd456c769d3bca47c03e172c258fa197f5412
 
 build:
   number: 0
