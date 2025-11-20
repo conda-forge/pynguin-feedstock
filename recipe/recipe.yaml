@@ -26,14 +26,14 @@ requirements:
     - poetry-core
     - python ${{ python_min }}.*
   run:
-    - python >=${{ python_min }},<3.14
-    - astroid >=3.3.9,<4.0.0
+    - python >=${{ python_min }},<3.15
+    - astroid >=4.0.1,<5.0.0
     - black >=25.1.0,<26.0.0
-    - bytecode >=0.16.1,<0.17.0
-    - dill >=0.3.9,<0.4.0
+    - bytecode >=0.17.0,<0.18.0
+    - dill >=0.4.0,<0.5.0
     - jinja2 >=3.1.6,<4.0.0
-    - networkx >=3.4.0,<4.0.0
-    - multiprocess >=0.70.16,<0.71.0
+    - networkx >=3.4.2,<4.0.0
+    - multiprocess >=0.70.18,<0.71.0
     - rich >=14.0.0,<15.0.0
     - pygments >=2.19.2,<3.0.0
     - pytest >=8.3.5,<9.0.0
@@ -41,9 +41,10 @@ requirements:
     - typing_inspect >=0.9.0,<0.10.0
     - asciitree >=0.3.3,<0.4.0
     - libcst >=1.7.0,<2.0.0
-    - setuptools >=78.1,<79.0
+    - setuptools >=80.9.0,<90.0.0
     - toml >=0.10.2,<0.11.0
-    - psutil >=7.0.0,<8.0.0
+    - psutil >=7.1.1,<8.0.0
+    - rstr >=3.2.2,<4.0.0
     # Not listed but needed for import test
     - numpy
 
@@ -51,11 +52,13 @@ tests:
   # Import test in script, no pip check because doesn't work with bytecode
   - requirements:
       run:
+        - pip
         - python ${{ python_min }}.*
     script:
       - export PYNGUIN_DANGER_AWARE=1
       - "python -c 'import pynguin'"
       - pynguin
+      - pip check
 
 about:
   summary: Pynguin is a tool for automated unit test generation for Python
