@@ -49,7 +49,7 @@ requirements:
     - numpy
 
 tests:
-  # Import test in script, no pip check because doesn't work with bytecode
+  # Import test in script due to env var
   - requirements:
       run:
         - pip
