@@ -41,7 +41,7 @@ requirements:
     - typing_inspect >=0.9.0,<0.10.0
     - asciitree >=0.3.3,<0.4.0
     - libcst >=1.7.0,<2.0.0
-    - setuptools >=80.9.0,<90.0.0
+    - setuptools >=80.9.0,<81.0.0
     - toml >=0.10.2,<0.11.0
     - psutil >=7.1.1,<8.0.0
     - rstr >=3.2.2,<4.0.0
