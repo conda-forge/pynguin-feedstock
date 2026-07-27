@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pynguin
-  version: "0.45.0"
+  version: "0.46.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pynguin-${{ version }}.tar.gz
-  sha256: 9bd1e632cb1b6a3d1f9de606e0fead92eb83fb3598ef973330c4739761cab922
+  sha256: a2dc25f65a26a812de763ba739df67ee18aab89f2608b0ffc8b0a44103ca07c0
 
 build:
   number: 0
@@ -41,7 +41,7 @@ requirements:
     - typing_inspect >=0.9.0,<0.10.0
     - asciitree >=0.3.3,<0.4.0
     - libcst >=1.7.0,<2.0.0
-    - setuptools >=80.9.0,<90.0.0
+    - setuptools >=80.9.0,<81.0.0
     - toml >=0.10.2,<0.11.0
     - psutil >=7.1.1,<8.0.0
     - rstr >=3.2.2,<4.0.0
