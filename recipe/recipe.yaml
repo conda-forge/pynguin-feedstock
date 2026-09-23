@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pynguin
-  version: "0.46.0"
+  version: "0.47.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pynguin-${{ version }}.tar.gz
-  sha256: a2dc25f65a26a812de763ba739df67ee18aab89f2608b0ffc8b0a44103ca07c0
+  sha256: e85958085d4e5072e12edced74b28d6e06c13d1c4218864ae53f55add26ebd48
 
 build:
   number: 0
